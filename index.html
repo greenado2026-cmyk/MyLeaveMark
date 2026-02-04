@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LeaveMyMark</title>
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+<header>LeaveMyMark</header>
+<div id="map"></div>
+
+<div class="content">
+  <h2>Залиш свій слід на карті</h2>
+  <form id="markerForm">
+    <input type="text" id="username" placeholder="Ваше ім'я" required>
+    <input type="text" id="message" placeholder="Повідомлення (опційно)">
+    <label><input type="checkbox" id="captcha" required> Я не робот</label>
+    <button type="submit">Придбати точку (1€)</button>
+  </form>
+</div>
+
+<script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+<script src="main.js"></script>
+</body>
+</html>
